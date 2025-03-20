@@ -156,13 +156,12 @@ console.log(cutString("EPICODE"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function giveMeRandom(aNum) {
-  let randomNum = [];
-  for (j = 0; j < aNum; i++) {
-    let limit = aNum[i];
-    let result = Math.floor(Math.random() * 11);
-    randomNum.push(result);
+  let randomNumbers = [];
+  for (let j = 0; j < aNum; j++) {
+    let randomNum = Math.floor(Math.random() * 11);
+    randomNumbers.push(randomNum);
   }
-  return result;
+  return randomNumbers;
 }
 
 console.log(giveMeRandom(5));
